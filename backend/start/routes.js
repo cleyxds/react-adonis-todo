@@ -21,6 +21,7 @@ Route.group(() => {
   Route.post('auth/login', 'UserController.login');
   Route.get('/projects', 'ProjectController.index').middleware('auth');
   Route.post('/projects', 'ProjectController.create').middleware('auth');
+  Route.delete('/projects/:id', 'ProjectController.destroy').middleware('auth');
   
 }).prefix('/api')
 
