@@ -35,6 +35,19 @@ class ProjectController {
 
     return project;
   }
+
+  async update({ auth, request, params }) {
+    const user = await auth.getUser();
+    const { id } = params;
+    const project = await Project.find(id);
+
+    AuthorizationService(project, user);
+
+    project.merge(request.only('title'));
+    await project.save();
+
+    return project;
+  }
 }
 
 module.exports = ProjectController
