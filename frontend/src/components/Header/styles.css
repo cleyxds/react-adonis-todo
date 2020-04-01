@@ -1,0 +1,38 @@
+
+.header-container {
+  width: 100%;
+  height: 70px;
+  background: #059DC7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-container h1 {
+  margin-left: 14px;
+  margin-right: 24px;
+  font-size: 20px;
+  color: #000;
+}
+
+.header-container a {
+  display: flex;
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  justify-content: left;
+}
+
+.header-container a svg {
+  margin-right: 4px;
+}
+
+.auth-container {
+  display: flex;
+  margin: 14px;
+}
+
+.auth-container a {
+  margin: 0 10px;
+}

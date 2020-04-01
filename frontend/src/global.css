@@ -1,0 +1,21 @@
+@import url('https://db.onlinewebfonts.com/c/6c79f7fd645c0d39b4ca10428237984a?family=Azo+Sans');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 14px Azo Sans, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, button {
+  font: 400 18px Azo Sans, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
