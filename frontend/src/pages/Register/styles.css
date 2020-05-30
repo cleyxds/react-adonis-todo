@@ -1,7 +1,49 @@
 .register-container {
   width: 100%;
+  margin: 0 auto;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #D9D9D9;
 }
+
+.register-container .content {
+  width: 35%;
+  margin-top: 96px;
+  padding: 20px;
+  background: #D9D9D9;
+  border-radius: 15px; 
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-container .content strong {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.register-container .content input {
+  width: 300px;
+  margin: 20px 0;
+  padding: 10px;
+  display: flex;
+}
+
+.register-container .content button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background: #A9A9A9;
+  margin-left: 100px;
+}
+
+.register-container .content button:hover {
+  background: #059DC7;
+  transition: .7s;
+  
+}
+
+
